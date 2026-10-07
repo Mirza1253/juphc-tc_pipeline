@@ -5,7 +5,11 @@ metadata:
 spec:
   pipelineRef:
     name: tax-calculator-pipeline
-  params: []
+
+  params:
+    - name: IMAGE
+      value: us.icr.io/tax-calculator/tax-calculator:latest
+
   workspaces:
     - name: shared-workspace
       emptyDir: {}
