@@ -1,0 +1,16 @@
+apiVersion: tekton.dev/v1
+kind: Task
+metadata:
+  name: tax-calculator-deploy
+spec:
+  params:
+    - name: IMAGE
+      type: string
+  steps:
+    - name: deploy
+      image: alpine:3.20
+      script: |
+        #!/bin/sh
+        set -eu
+        echo "Deployment placeholder for image: $(params.IMAGE)"
+        echo "Connect this task to the IBM Cloud target required by your course environment."
