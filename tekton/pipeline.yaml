@@ -31,4 +31,4 @@ spec:
         name: build
       workspaces:
         - name: source
-          workspace: shared-workspacecd "D:\tax calculator\tax-calculator"
+          workspace: shared-workspace
